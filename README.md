@@ -24,7 +24,7 @@ This application can be tested using PostMan or its equivalent. It's a Spring Bo
 	}
 }
 
-###ToDo
+### ToDo
 In this application, I have modelled two types of accounts, DematAccount and SavingsAccount, both of which implement Account interface. Ideally, I wanted my DematAccount to implement multiple interfaces, for e.g. DematAccount implements Accounts, SupportsCashBalance, SupportsMutualFunds, SupportsBrokerageAssets etc. etc. This way I wanted to keep the behaviour of an Account flexible so that both of the Accounts (DemantAccount and SavingsAccount) can be modelled independently. 
 
 While I could do the object modelling, I could not figure out the right way to create the schema file for this. This is something whihc needs to be worked upon in coming days/weeks.
