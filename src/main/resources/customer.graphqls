@@ -1,0 +1,21 @@
+schema {
+	query: Query
+}
+
+type Query {
+	customer: Customer
+}
+
+type Customer {
+	firstName: String,
+	salutation: String.
+	lastName: String
+	address: Address
+	accounts: [Account]
+}
+
+type Address {
+	line1: String,
+	line2: String,
+	postCode: String
+}

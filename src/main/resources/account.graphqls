@@ -1,0 +1,37 @@
+interface Account{
+	accountNumber:String!
+	cashBalance: Cash,
+	mutualFundHoldings: [MutualFundHolding]
+}
+
+type DematAccount implements Account{
+	accountNumber: String!,
+	cashBalance: Cash,
+	mutualFundHoldings: [MutualFundHolding]
+}
+
+type SavingsAccount implements Account{
+	accountNumber: String!,
+	cashBalance: Cash,
+	mutualFundHoldings: [MutualFundHolding]
+}
+
+interface SupportsCashBalance{
+	cashBalance: Cash
+}
+
+interface SupportsMutualFunds{
+	mutualFundHoldings: [MutualFundHolding]
+}
+
+type Cash {
+	availableCash: Float,
+	totalCash: Float,
+	reservedcash: Float
+}
+
+type MutualFundHolding {
+	fundIdentifier: String,
+	fundName: String,
+	unitsHeld: String,
+}
