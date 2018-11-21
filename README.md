@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rsjain1978/demand-driven-api.svg?branch=master)](https://travis-ci.org/rsjain1978/demand-driven-api)
+
 ## Overview
 This is a sample implementation of a Demand Driven API which returns different attributes of Customer as requested in the incoming request. This application explains how graph-ql can be used in a complex multi entity schema; for e.g. in this application we assume that a customer can have multiple accounts, each account could have different attributes / charecterstics etc.
 
